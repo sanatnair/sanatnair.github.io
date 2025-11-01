@@ -5,70 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sanat Nair · Portfolio</title>
   <link rel="stylesheet" href="assets/styles.css">
-  <meta name="description" content="Portfolio of Sanat Nair — Mechanical & Systems Design · Product Design · EPM/TPM · Robotics/AR">
+  <meta name="description" content="Portfolio of Sanat Nair">
 </head>
 <body>
   <div class="container">
     <div class="nav">
       <div class="left"><a href="./"><strong>SN</strong></a></div>
       <div class="right">
-        <a href="Resume_SN.pdf">Résumé</a>
         <a href="https://www.linkedin.com/in/sanat-nair" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="https://github.com/sanatnair" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="projects/index.html">Projects</a>
       </div>
     </div>
 
     <div class="header">
       <h1>Sanat Nair</h1>
-      <p class="subtitle">Mechanical & Systems Design · Product Design · EPM/TPM · Robotics/AR</p>
+      <p class="subtitle">Mechanical & Systems Design · Product Design · EPM/TPM</p>
       <div class="hero-links">
-        <a class="btn" href="Resume_SN.pdf">Download Résumé</a>
-        <a class="btn" href="projects/index.html">Browse All Repos</a>
+        <a class="btn" href="https://www.linkedin.com/in/sanat-nair" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn" href="https://github.com/sanatnair" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </div>
 
-    <h2 style="margin-top:24px;">Latest from GitHub</h2>
-    <p class="subtitle">Auto-pulled from <a href="https://github.com/sanatnair" target="_blank">github.com/sanatnair</a>. Update any repo and it shows here.</p>
-    <div id="repo-grid" class="grid"></div>
-
     <div class="footer">© 2025 Sanat Nair · Built with GitHub Pages</div>
   </div>
-
-<script>
-const USER = "sanatnair";
-const GRID = document.getElementById("repo-grid");
-const CARD = (repo) => {
-  const topics = (repo.topics || []).slice(0,3).map(t => `<span class="tag">${t}</span>`).join("");
-  const lang = repo.language ? `<span class="tag">${repo.language}</span>` : "";
-  const stars = repo.stargazers_count ? `★ ${repo.stargazers_count}` : "";
-  const forks = repo.forks_count ? `⎇ ${repo.forks_count}` : "";
-  const stats = [stars, forks].filter(Boolean).join(" · ");
-  return `<a class="card" href="${repo.html_url}" target="_blank" rel="noreferrer">
-    <img src="https://opengraph.githubassets.com/1/${repo.full_name}" alt="${repo.name} preview" loading="lazy">
-    <h3>${repo.name}</h3>
-    <p>${repo.description || "No description provided."}</p>
-    <div>${lang} ${topics}</div>
-    <p class="subtitle" style="margin-top:8px;">${stats}</p>
-  </a>`;
-};
-
-async function loadRepos() {
-  try {
-    const r = await fetch(`https://api.github.com/users/${USER}/repos?per_page=100`, { headers: { "Accept": "application/vnd.github+json" }});
-    const data = await r.json();
-    if (!Array.isArray(data)) throw new Error("Invalid GitHub response");
-    // Sort by updated, then take either featured topic or top-8 updated
-    const featured = data.filter(d => (d.topics||[]).includes("portfolio-featured"));
-    const sorted = data.sort((a,b)=> new Date(b.pushed_at) - new Date(a.pushed_at));
-    const picks = (featured.length ? featured : sorted).slice(0,8);
-    GRID.innerHTML = picks.map(CARD).join("");
-  } catch (e) {
-    GRID.innerHTML = `<div class="card"><h3>Could not load repositories</h3><p class="subtitle">GitHub API rate-limited or offline. Try refreshing in a minute.</p></div>`;
-    console.error(e);
-  }
-}
-loadRepos();
-</script>
 </body>
 </html>
