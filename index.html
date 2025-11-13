@@ -19,200 +19,429 @@
 
     <div class="header">
       <h1>Sanat Nair</h1>
-      <p class="subtitle">Mechanical & Systems Design · Product Design · EPM/TPM</p>
+      <p class="subtitle">Mechanical &amp; Systems Design · Product Design · EPM/TPM</p>
       <div class="hero-links">
         <a class="btn" href="https://www.linkedin.com/in/sanat-nair" target="_blank" rel="noreferrer">LinkedIn</a>
         <a class="btn" href="https://github.com/sanatnair" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </div>
-<section id="projects" style="margin-top:32px;">
-  <h2>Projects</h2>
-  <p class="subtitle">A selection of design, research, and impact work.</p>
 
-  <div class="grid">
+    <section id="projects" style="margin-top:32px;">
+      <h2>Projects</h2>
+      <p class="subtitle">A selection of design, research, and impact work.</p>
 
-    <article class="card">
+      <div class="grid">
+
+        <!-- 1. ASME SDC card -->
+        <article class="card">
+          <h3>ASME Student Design Challenge 2025–2026</h3>
+          <p class="subtitle">Team Lead — Systems Design &amp; Rapid Prototyping</p>
+          <div>
+            <span class="tag">Product Design</span>
+            <span class="tag">Team Leadership</span>
+            <span class="tag">Systems Integration</span>
+          </div>
+
+          <!-- optional thumb image -->
+          <!-- <img src="assets/images/asme_thumb.jpg" alt="ASME concept" class="card-thumb"> -->
+
+          <p>
+            Leading the design of an autonomous waste-collection device for the
+            <a href="https://efests.asme.org/competitions/student-design-competition-(sdc)" target="_blank" rel="noreferrer">
+              ASME Student Design Competition
+            </a>, focused on efficiency and sorting accuracy.
+          </p>
+
+          <button class="card-toggle" type="button" data-modal="modal-asme">
+            View Details &rarr;
+          </button>
+        </article>
+
+        <!-- 2. RC Car card -->
+        <article class="card">
+          <h3>RC Car Build</h3>
+          <p class="subtitle">Project Manager — Mechanical Design &amp; Additive Manufacturing</p>
+          <div>
+            <span class="tag">Product Design</span>
+            <span class="tag">Additive Manufacturing</span>
+            <span class="tag">Project Management</span>
+          </div>
+
+          <img src="assets/images/rc_car_thumb.jpg" alt="RC car concept" class="card-thumb">
+
+          <p>
+            Designed and built an RC race car with a 259 mm wheelbase, rear-wheel-drive powertrain,
+            and optimized Ackermann steering as part of a semester-long capstone project.
+          </p>
+
+          <button class="card-toggle" type="button" data-modal="modal-rc-car">
+            View Details &rarr;
+          </button>
+        </article>
+
+        <!-- 3. Guadaloop card -->
+        <article class="card">
+          <h3>Texas Guadaloop — Hyperloop Pod Frame &amp; Thermal Systems</h3>
+          <p class="subtitle">Structures &amp; Manufacturing Team — Mechanical Design &amp; Simulation</p>
+          <div>
+            <span class="tag">Product Design</span>
+            <span class="tag">CAD/FEA</span>
+            <span class="tag">Thermal Systems</span>
+            <span class="tag">Composites</span>
+          </div>
+
+          <!-- <img src="assets/images/guadaloop_thumb.jpg" alt="Hyperloop chassis" class="card-thumb"> -->
+
+          <p>
+            Designed the composite chassis and thermal subsystems for the Texas Guadaloop Hyperloop pod.
+          </p>
+
+          <button class="card-toggle" type="button" data-modal="modal-guadaloop">
+            View Details &rarr;
+          </button>
+        </article>
+
+        <!-- 4. NRG card -->
+        <article class="card">
+          <h3>Human–Robot Collaboration Research — UT NRG</h3>
+          <p class="subtitle">Undergraduate Researcher — ML/Edge Deployment &amp; Datasets</p>
+          <div>
+            <span class="tag">Robotics</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">AR/VR</span>
+            <span class="tag">Edge Deployment</span>
+            <span class="tag">ROS2</span>
+          </div>
+
+          <!-- <img src="assets/images/nrg_thumb.jpg" alt="Human-robot collaboration" class="card-thumb"> -->
+
+          <p>
+            Building perception datasets and edge ML systems to enable AR-based human–robot collaboration
+            for industrial and defense applications.
+          </p>
+
+          <button class="card-toggle" type="button" data-modal="modal-nrg">
+            View Details &rarr;
+          </button>
+        </article>
+
+        <!-- 5. Convergent card -->
+        <article class="card">
+          <h3>Texas Convergent — “Launder” App</h3>
+          <p class="subtitle">Software Developer — Sustainability &amp; Frontend Design</p>
+          <div>
+            <span class="tag">App Development</span>
+            <span class="tag">Sustainability</span>
+            <span class="tag">Frontend (React.js)</span>
+          </div>
+
+          <!-- <img src="assets/images/launder_thumb.jpg" alt="Launder app UI" class="card-thumb"> -->
+
+          <p>
+            Developed a sustainability-focused web app that recommends energy-efficient laundry times
+            using real-time grid and utility data.
+          </p>
+
+          <button class="card-toggle" type="button" data-modal="modal-launder">
+            View Details &rarr;
+          </button>
+        </article>
+
+        <!-- 6. PUC card -->
+        <article class="card">
+          <h3>Projects with Underserved Communities (PUC) — Team India</h3>
+          <p class="subtitle">Technical Manager — Humanitarian Engineering &amp; Program Coordination</p>
+          <div>
+            <span class="tag">Sustainable Design</span>
+            <span class="tag">Program Management</span>
+            <span class="tag">Community Impact</span>
+          </div>
+
+          <!-- <img src="assets/images/puc_thumb.jpg" alt="PUC India community center" class="card-thumb"> -->
+
+          <p>
+            Leading engineering design and planning for a multi-purpose community center
+            in Kotrakona, India, serving 375 families.
+          </p>
+
+          <button class="card-toggle" type="button" data-modal="modal-puc">
+            View Details &rarr;
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="footer">© 2025 Sanat Nair · Built with GitHub Pages</div>
+  </div>
+
+  <!-- ===== Modals ===== -->
+
+  <!-- ASME modal -->
+  <div class="modal" id="modal-asme">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" aria-label="Close">&times;</button>
       <h3>ASME Student Design Challenge 2025–2026</h3>
       <p class="subtitle">Team Lead — Systems Design &amp; Rapid Prototyping</p>
-      <div>
+
+      <div class="modal-tags">
         <span class="tag">Product Design</span>
         <span class="tag">Team Leadership</span>
         <span class="tag">Systems Integration</span>
       </div>
 
-      <!-- short summary always visible -->
+      <h4>What</h4>
       <p>
-        Leading the design of an autonomous waste-collection device for the 
+        Leading the development of an autonomous waste-collection device for the
         <a href="https://efests.asme.org/competitions/student-design-competition-(sdc)" target="_blank" rel="noreferrer">
           ASME Student Design Competition
-        </a>, focused on efficiency and sorting accuracy.
+        </a>, focused on efficiency, sorting accuracy, and delivery mechanisms.
       </p>
 
-      <!-- toggle button -->
-      <button class="card-toggle" type="button">View details</button>
+      <h4>How</h4>
+      <p>
+        Guiding a 4-member team through customer-needs analysis, concept generation and screening, and creation of
+        engineering specifications. Coordinating subsystem design efforts across drive, collection, sorting, and
+        delivery modules.
+      </p>
 
-      <!-- details: hidden until button clicked -->
-      <div class="card-details">
-        <p><strong>What:</strong> Leading the development of an autonomous waste-collection device focused on efficiency, sorting accuracy, and delivery mechanisms.</p>
-        <p><strong>How:</strong> Guiding a 4-member team through customer-needs analysis, concept generation and screening, and creation of engineering specifications. Coordinating subsystem design efforts across drive, collection, sorting, and delivery modules.</p>
-        <p><strong>Results:</strong> Completed the Concept Design Phase ahead of schedule; targeting 100% sorting accuracy and maximized throughput entering the Preliminary Design Phase for Spring 2026 competition.</p>
-        <!-- You can add an image here later -->
-        <!-- <img src="assets/images/asme_concept.jpg" alt="ASME concept CAD" class="full"> -->
-      </div>
-    </article>
+      <h4>Results</h4>
+      <p>
+        Completed the Concept Design Phase ahead of schedule; targeting 100% sorting accuracy and maximized throughput
+        entering the Preliminary Design Phase for Spring 2026 competition.
+      </p>
+    </div>
+  </div>
 
-    <!-- 2. RC Car -->
-    <article class="card">
+  <!-- RC Car modal -->
+  <div class="modal" id="modal-rc-car">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" aria-label="Close">&times;</button>
       <h3>RC Car Project — Capstone Mechanical Design</h3>
       <p class="subtitle">Project Manager — Mechanical Design &amp; Additive Manufacturing</p>
-      <div>
-        <span class="tag">Product Design</span>
-        <span class="tag">Additive Manufacturing</span>
-        <span class="tag">Project Management</span>
+
+      <div class="modal-tags">
+        <span class="tag">SolidWorks</span>
+        <span class="tag">CAD Design</span>
+        <span class="tag">Team Collaboration</span>
+        <span class="tag">3D Printing</span>
       </div>
 
-      <!-- Thumbnail image always visible -->
-      <img src="assets/images/rc_car_thumb.jpg" alt="RC car prototype" class="card-thumb">
-
-      <!-- Short summary always visible -->
+      <h4>What</h4>
       <p>
         Designed and built an RC race car with a 259 mm wheelbase, rear-wheel-drive (RWD) powertrain,
-        and optimized Ackermann steering geometry as part of a semester-long capstone project.
+        and optimized Ackermann steering geometry.
       </p>
 
-      <!-- Toggle button -->
-      <button class="card-toggle" type="button">View details</button>
+      <h4>How</h4>
+      <p>
+        Modeled chassis, drivetrain, and suspension in SolidWorks; fabricated components using laser-cut acrylic and
+        3D-printed parts. Integrated servo steering, DC motor propulsion (3.97:1 gear ratio), and U-joint driveshafts.
+        Managed build timeline, iterative testing, and documentation for a 5-member team.
+      </p>
 
-      <!-- Hidden details section -->
-      <div class="card-details">
-        <p><strong>What:</strong> Designed and built an RC race car with a 259 mm wheelbase, rear-wheel-drive (RWD) powertrain, and optimized Ackermann steering geometry.</p>
+      <h4>Results</h4>
+      <p>
+        Achieved 20–26 mph top speed with ~2 s 0–10 mph acceleration; completed 8 successful track laps with ~7 s best
+        lap time. Demonstrated durability and stable handling throughout race tests.
+      </p>
+    </div>
+  </div>
 
-        <p><strong>How:</strong> Modeled chassis, drivetrain, and suspension in SolidWorks; fabricated components using laser-cut acrylic and 3D-printed parts. Integrated servo steering, DC motor propulsion (3.97:1 gear ratio), and U-joint driveshafts. Managed build timeline, iterative testing, and documentation for a 5-member team.</p>
-
-        <p><strong>Results:</strong> Achieved 20–26 mph top speed with ~2 s 0–10 mph acceleration; completed 8 successful track laps with ~7 s best lap time. Demonstrated durability and stable handling throughout race tests.</p>
-
-        <!-- Later you can add subsystem images here -->
-        <!-- <img src="assets/images/rc_car_drivetrain.jpg" class="full" alt="RC car drivetrain"> -->
-      </div>
-    </article>
-
-
-    <!-- 3. Texas Guadaloop -->
-    <article class="card">
+  <!-- Guadaloop modal -->
+  <div class="modal" id="modal-guadaloop">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" aria-label="Close">&times;</button>
       <h3>Texas Guadaloop — Hyperloop Pod Frame &amp; Thermal Systems</h3>
       <p class="subtitle">Structures &amp; Manufacturing Team — Mechanical Design &amp; Simulation</p>
-      <div>
+
+      <div class="modal-tags">
         <span class="tag">Product Design</span>
         <span class="tag">CAD/FEA</span>
         <span class="tag">Thermal Systems</span>
         <span class="tag">Composites</span>
       </div>
-      <p><strong>What:</strong> Designed structural and thermal subsystems for the Texas Guadaloop Hyperloop pod, 
-        including the composite chassis and propulsion cooling architecture.
-      </p>
-      <p><strong>How:</strong> Created a manufacturable pod frame in SolidWorks; conducted static/dynamic FEA and vibration 
-        analysis to meet strength-to-weight targets under acceleration loads. Modeled a phase-change-material-based cooling 
-        system and performed thermal simulations to ensure motor reliability. Supported fabrication via welding and composite layups.
-      </p>
-      <p><strong>Results:</strong> Delivered a lightweight, robust chassis meeting structural safety factors (&gt; 2); 
-        integrated propulsion, electronics, and levitation subsystems onto the completed frame.
-      </p>
-      <!-- Media: Chassis CAD; FEA plots; thermal sim; final chassis photo -->
-    </article>
 
-    <!-- 4. NRG / HRC Research -->
-    <article class="card">
+      <h4>What</h4>
+      <p>
+        Designed structural and thermal subsystems for the Texas Guadaloop Hyperloop pod, including the composite
+        chassis and propulsion cooling architecture.
+      </p>
+
+      <h4>How</h4>
+      <p>
+        Created a manufacturable pod frame in SolidWorks; conducted static/dynamic FEA and vibration analysis to meet
+        strength-to-weight targets under acceleration loads. Modeled a phase-change-material-based cooling system and
+        performed thermal simulations to ensure motor reliability. Supported fabrication via welding and composite
+        layups.
+      </p>
+
+      <h4>Results</h4>
+      <p>
+        Delivered a lightweight, robust chassis meeting structural safety factors (&gt; 2); integrated propulsion,
+        electronics, and levitation subsystems onto the completed frame.
+      </p>
+    </div>
+  </div>
+
+  <!-- NRG modal -->
+  <div class="modal" id="modal-nrg">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" aria-label="Close">&times;</button>
       <h3>Human–Robot Collaboration Research — UT Nuclear &amp; Applied Robotics Group</h3>
       <p class="subtitle">Undergraduate Researcher — ML/Edge Deployment &amp; Dataset Development</p>
-      <div>
+
+      <div class="modal-tags">
         <span class="tag">Robotics</span>
         <span class="tag">Machine Learning</span>
         <span class="tag">AR/VR</span>
         <span class="tag">Edge Deployment</span>
         <span class="tag">ROS2</span>
       </div>
-      <p><strong>What:</strong> Developing large-scale perception datasets and machine learning systems to enable 
-        real-time, AR-based human–robot collaboration for industrial and defense applications.
+
+      <h4>What</h4>
+      <p>
+        Developing large-scale perception datasets and machine learning systems to enable real-time, AR-based
+        human–robot collaboration for industrial and defense applications.
       </p>
-      <p><strong>How:</strong> Published egocentric and allocentric datasets (12+ hrs, 10,200+ annotations) on the Texas 
-        Data Repository and arXiv. Fine-tuned depth- and gesture-recognition models using the UniK3D + YOLO framework and 
-        deployed them on Jetson edge devices. Integrated perception into UR3 robot control via ROS2 for additive-manufacturing tasks.
+
+      <h4>How</h4>
+      <p>
+        Published egocentric and allocentric datasets (12+ hrs, 10,200+ annotations) on the Texas Data Repository and
+        arXiv. Fine-tuned depth- and gesture-recognition models using the UniK3D + YOLO framework and deployed them on
+        Jetson edge devices. Integrated perception into UR3 robot control via ROS2 for additive-manufacturing tasks.
       </p>
-      <p><strong>Results:</strong> Advanced UT’s human-robot-interaction research pipeline with deployed edge-inference 
-        prototypes; contributed to an IEEE FG 2026 conference submission.
+
+      <h4>Results</h4>
+      <p>
+        Advanced UT’s human-robot-interaction research pipeline with deployed edge-inference prototypes; contributed to
+        an IEEE FG 2026 conference submission.
       </p>
-      <p><strong>Links:</strong><br>
+
+      <h4>Links</h4>
+      <p>
         – <a href="https://doi.org/10.48550/arXiv.2407.14649" target="_blank" rel="noreferrer">arXiv paper</a><br>
         – <a href="https://utnuclearroboticspublic.github.io/egonrg-website/" target="_blank" rel="noreferrer">EgoNRG project site</a><br>
         – <a href="https://github.com/UTNuclearRobotics/UniK3D" target="_blank" rel="noreferrer">UniK3D GitHub repo</a>
       </p>
-      <!-- Media: Jetson inference demo; dataset sample frames -->
-    </article>
+    </div>
+  </div>
 
-    <!-- 5. Texas Convergent - Launder -->
-    <article class="card">
+  <!-- Launder modal -->
+  <div class="modal" id="modal-launder">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" aria-label="Close">&times;</button>
       <h3>Texas Convergent — “Launder” App</h3>
       <p class="subtitle">Software Developer — Sustainability &amp; Frontend Design</p>
-      <div>
+
+      <div class="modal-tags">
         <span class="tag">App Development</span>
         <span class="tag">Sustainability</span>
         <span class="tag">Frontend (React.js)</span>
       </div>
-      <p><strong>What:</strong> Developed a sustainability-focused web app that recommends energy-efficient laundry times 
-        based on real-time grid and utility data.
+
+      <h4>What</h4>
+      <p>
+        Developed a sustainability-focused web app that recommends energy-efficient laundry times based on real-time
+        grid and utility data.
       </p>
-      <p><strong>How:</strong> Built frontend components in React.js; integrated graphics and scheduling logic into user dashboards; 
-        collaborated with technical and product teams to iterate on UI/UX.
+
+      <h4>How</h4>
+      <p>
+        Built frontend components in React.js; integrated graphics and scheduling logic into user dashboards; collaborated
+        with technical and product teams to iterate on UI/UX.
       </p>
-      <p><strong>Results:</strong> Won <em>Best Tech Project</em> at Convergent Demo Day 2022 for usability, technical depth, and impact.
+
+      <h4>Results</h4>
+      <p>
+        Won <em>Best Tech Project</em> at Convergent Demo Day 2022 for usability, technical depth, and impact.
       </p>
-      <p><strong>Links:</strong><br>
+
+      <h4>Links</h4>
+      <p>
         – <a href="https://github.com/bengordon-dev/fa22-sustainability-water" target="_blank" rel="noreferrer">GitHub repo</a><br>
         – <a href="https://www.canva.com/design/DAFRwFxXMA0/EPpnkytRgTof7uzfa7ZMCQ/view" target="_blank" rel="noreferrer">Slide deck</a>
       </p>
-      <!-- Media: Dashboard screenshot -->
-    </article>
+    </div>
+  </div>
 
-    <!-- 6. PUC India -->
-    <article class="card">
+  <!-- PUC modal -->
+  <div class="modal" id="modal-puc">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" aria-label="Close">&times;</button>
       <h3>Projects with Underserved Communities (PUC) — Team India</h3>
       <p class="subtitle">Technical Manager — Humanitarian Engineering &amp; Program Coordination</p>
-      <div>
+
+      <div class="modal-tags">
         <span class="tag">Sustainable Design</span>
         <span class="tag">Program Management</span>
         <span class="tag">Community Impact</span>
       </div>
-      <p><strong>What:</strong> Leading engineering design and planning for a multi-purpose community center in Kotrakona, India, 
-        serving 375 families.
+
+      <h4>What</h4>
+      <p>
+        Leading engineering design and planning for a multi-purpose community center in Kotrakona, India, serving
+        375 families.
       </p>
-      <p><strong>How:</strong> Coordinating with NGO partner CASA and local stakeholders to define technical requirements, 
-        complete early site planning, and produce preliminary drawings. Managing a 7-member interdisciplinary team and leading an 
+
+      <h4>How</h4>
+      <p>
+        Coordinating with NGO partner CASA and local stakeholders to define technical requirements, complete early
+        site planning, and produce preliminary drawings. Managing a 7-member interdisciplinary team and leading an
         $18,000+ fundraising effort for construction materials.
       </p>
-      <p><strong>Results:</strong> Delivered conceptual design package and project scope documents; scheduled for onsite validation 
-        and construction initiation in May 2026.
+
+      <h4>Results</h4>
+      <p>
+        Delivered conceptual design package and project scope documents; scheduled for onsite validation and
+        construction initiation in May 2026.
       </p>
-      <p><strong>Links:</strong><br>
+
+      <h4>Links</h4>
+      <p>
         – <a href="https://give.utexas.edu/puc-india-team-green" target="_blank" rel="noreferrer">HornRaiser campaign</a>
       </p>
-      <!-- Media: Sample community center drawing -->
-    </article>
-
+    </div>
   </div>
-</section>
 
-    <div class="footer">© 2025 Sanat Nair · Built with GitHub Pages</div>
-  </div>
+  <!-- ===== Modal JS wiring ===== -->
   <script>
-  document.querySelectorAll('.card-toggle').forEach(function(btn) {
-    btn.addEventListener('click', function () {
-      const card = btn.closest('.card');
-      const details = card.querySelector('.card-details');
-      const isOpen = details.classList.toggle('open');
-      btn.textContent = isOpen ? 'Hide details' : 'View details';
+    // Open modal on button click
+    document.querySelectorAll('[data-modal]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const id = btn.getAttribute('data-modal');
+        const modal = document.getElementById(id);
+        if (modal) {
+          modal.classList.add('open');
+        }
+      });
     });
-  });
-</script>
 
+    // Close modal on X or backdrop click
+    document.querySelectorAll('.modal').forEach(function (modal) {
+      const closeBtn = modal.querySelector('.modal-close');
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+          modal.classList.remove('open');
+        });
+      }
+
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+          modal.classList.remove('open');
+        }
+      });
+    });
+
+    // Close all modals on Esc key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal.open').forEach(function (m) {
+          m.classList.remove('open');
+        });
+      }
+    });
+  </script>
 </body>
 </html>
