@@ -31,7 +31,6 @@
 
   <div class="grid">
 
-    <!-- 1. ASME SDC -->
     <article class="card">
       <h3>ASME Student Design Challenge 2025–2026</h3>
       <p class="subtitle">Team Lead — Systems Design &amp; Rapid Prototyping</p>
@@ -40,19 +39,26 @@
         <span class="tag">Team Leadership</span>
         <span class="tag">Systems Integration</span>
       </div>
-      <p><strong>What:</strong> Leading the development of an autonomous waste-collection device for the 
+
+      <!-- short summary always visible -->
+      <p>
+        Leading the design of an autonomous waste-collection device for the 
         <a href="https://efests.asme.org/competitions/student-design-competition-(sdc)" target="_blank" rel="noreferrer">
           ASME Student Design Competition
-        </a>, focused on efficiency, sorting accuracy, and delivery mechanisms.
+        </a>, focused on efficiency and sorting accuracy.
       </p>
-      <p><strong>How:</strong> Guiding a 4-member team through customer-needs analysis, concept generation and screening, 
-        and creation of engineering specifications. Coordinating subsystem design efforts across drive, collection, sorting, 
-        and delivery modules.
-      </p>
-      <p><strong>Results:</strong> Completed the Concept Design Phase ahead of schedule; targeting 100% sorting accuracy 
-        and maximized throughput entering the Preliminary Design Phase for Spring 2026 competition.
-      </p>
-      <!-- Media: Preliminary concept CAD render -->
+
+      <!-- toggle button -->
+      <button class="card-toggle" type="button">View details</button>
+
+      <!-- details: hidden until button clicked -->
+      <div class="card-details">
+        <p><strong>What:</strong> Leading the development of an autonomous waste-collection device focused on efficiency, sorting accuracy, and delivery mechanisms.</p>
+        <p><strong>How:</strong> Guiding a 4-member team through customer-needs analysis, concept generation and screening, and creation of engineering specifications. Coordinating subsystem design efforts across drive, collection, sorting, and delivery modules.</p>
+        <p><strong>Results:</strong> Completed the Concept Design Phase ahead of schedule; targeting 100% sorting accuracy and maximized throughput entering the Preliminary Design Phase for Spring 2026 competition.</p>
+        <!-- You can add an image here later -->
+        <!-- <img src="assets/images/asme_concept.jpg" alt="ASME concept CAD" class="full"> -->
+      </div>
     </article>
 
     <!-- 2. RC Car -->
@@ -64,18 +70,32 @@
         <span class="tag">Additive Manufacturing</span>
         <span class="tag">Project Management</span>
       </div>
-      <p><strong>What:</strong> Designed and built an RC race car with a 259 mm wheelbase, rear-wheel-drive (RWD) 
-        powertrain, and optimized Ackermann steering geometry.
+
+      <!-- Thumbnail image always visible -->
+      <img src="assets/images/rc_car_thumb.jpg" alt="RC car prototype" class="card-thumb">
+
+      <!-- Short summary always visible -->
+      <p>
+        Designed and built an RC race car with a 259 mm wheelbase, rear-wheel-drive (RWD) powertrain,
+        and optimized Ackermann steering geometry as part of a semester-long capstone project.
       </p>
-      <p><strong>How:</strong> Modeled chassis, drivetrain, and suspension in SolidWorks; fabricated components using 
-        laser-cut acrylic and 3D-printed parts. Integrated servo steering, DC motor propulsion (3.97:1 gear ratio), 
-        and U-joint driveshafts. Managed build timeline, iterative testing, and documentation for a 5-member team.
-      </p>
-      <p><strong>Results:</strong> Achieved 20–26 mph top speed with ~2 s 0–10 mph acceleration; completed 8 successful 
-        track laps with ~7 s best lap time. Demonstrated durability and stable handling throughout race tests.
-      </p>
-      <!-- Media: Assembled car photos; steering/drivetrain renders -->
+
+      <!-- Toggle button -->
+      <button class="card-toggle" type="button">View details</button>
+
+      <!-- Hidden details section -->
+      <div class="card-details">
+        <p><strong>What:</strong> Designed and built an RC race car with a 259 mm wheelbase, rear-wheel-drive (RWD) powertrain, and optimized Ackermann steering geometry.</p>
+
+        <p><strong>How:</strong> Modeled chassis, drivetrain, and suspension in SolidWorks; fabricated components using laser-cut acrylic and 3D-printed parts. Integrated servo steering, DC motor propulsion (3.97:1 gear ratio), and U-joint driveshafts. Managed build timeline, iterative testing, and documentation for a 5-member team.</p>
+
+        <p><strong>Results:</strong> Achieved 20–26 mph top speed with ~2 s 0–10 mph acceleration; completed 8 successful track laps with ~7 s best lap time. Demonstrated durability and stable handling throughout race tests.</p>
+
+        <!-- Later you can add subsystem images here -->
+        <!-- <img src="assets/images/rc_car_drivetrain.jpg" class="full" alt="RC car drivetrain"> -->
+      </div>
     </article>
+
 
     <!-- 3. Texas Guadaloop -->
     <article class="card">
@@ -183,5 +203,16 @@
 
     <div class="footer">© 2025 Sanat Nair · Built with GitHub Pages</div>
   </div>
+  <script>
+  document.querySelectorAll('.card-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function () {
+      const card = btn.closest('.card');
+      const details = card.querySelector('.card-details');
+      const isOpen = details.classList.toggle('open');
+      btn.textContent = isOpen ? 'Hide details' : 'View details';
+    });
+  });
+</script>
+
 </body>
 </html>

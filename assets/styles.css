@@ -34,3 +34,38 @@ a:hover{text-decoration:underline}
 .code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#0e1421;border:1px solid #1b2235;padding:8px;border-radius:8px}
 img.full{width:100%;border-radius:14px;border:1px solid #1b2235}
 @media (max-width:640px){.nav{flex-direction:column;gap:8px}.header h1{font-size:26px}}
+.card-toggle {
+  margin-top: 12px;
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #263149;
+  background: #141b25;
+  cursor: pointer;
+}
+
+.card-toggle:hover {
+  filter: brightness(1.1);
+}
+
+.card-details {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #1c2333;
+  display: none;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.card-details.open {
+  display: block;
+}
+.card-thumb {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 10px;
+  border: 1px solid #1c2333;
+  object-fit: cover;
+  max-height: 220px;
+}
