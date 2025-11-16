@@ -11,10 +11,63 @@ a:hover{text-decoration:underline}
 .header{padding:24px;border-radius:16px;background:linear-gradient(135deg,#172031, #0e1420);box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .header h1{margin:0 0 6px;font-size:32px}
 .header p{margin:0;color:var(--muted)}
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #1d2536;
+}
+
+.header-info h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header-info .subtitle {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  color: var(--muted);
+}
+
+.bio {
+  margin: 6px 0 0;
+  color: #c6d0de;
+  line-height: 1.5;
+  max-width: 600px;
+}
+.bio-list--icon {
+  padding-left: 0;
+  list-style: none;
+}
+
+.bio-list--icon li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 6px;
+  color: #c6d0de;
+}
+
+.bio-list--icon li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent); /* uses your theme’s blue */
+  font-weight: bold;
+}
+
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:24px}
 .card{background:var(--card);border:1px solid #1c2331;border-radius:16px;padding:16px;transition:transform .15s ease, box-shadow .15s ease}
 .card:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(0,0,0,.35)}
-.card img{width:100%;height:150px;object-fit:cover;border-radius:12px}
+.card img{width:100%;border-radius:12px}
 .card h3{margin:12px 0 6px}
 .tag{display:inline-block;background:#1b2232;color:#c9d5ea;border:1px solid #263149;border-radius:999px;padding:2px 10px;margin-right:8px;font-size:12px}
 .footer{margin:32px 0;color:var(--muted);text-align:center}
@@ -43,6 +96,7 @@ img.full{width:100%;border-radius:14px;border:1px solid #1b2235}
   border-radius: 999px;
   border: 1px solid #263149;
   background: #141b25;
+  color: #ffffff;  
   cursor: pointer;
 }
 .card-toggle:hover {
@@ -52,12 +106,15 @@ img.full{width:100%;border-radius:14px;border:1px solid #1b2235}
 /* optional thumb image on cards */
 .card-thumb {
   width: 100%;
-  height: 200px;
-  object-fit: contain;
+  height: 250px;
+  object-fit: cover;
+  object-position: center center;
   border-radius: 12px;
-  padding: 6px; /* buffer so images don’t touch edges */
+  padding: 1px; /* buffer so images don’t touch edges */
   background: #0f1521;
   border: 1px solid #1c2333;
+  margin-top: 12px;     /* adds space ABOVE the image */
+  margin-bottom: 12px;  /* keeps space BELOW the image */
 }
 
 
@@ -118,3 +175,60 @@ img.full{width:100%;border-radius:14px;border:1px solid #1b2235}
   margin-top: 4px;
   margin-bottom: 8px;
 }
+.modal-inner img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 14px 0;
+  border: 1px solid #1c2333;
+}
+.modal-inner video {
+  width: 100%;
+  border-radius: 12px;
+  margin: 14px 0;
+  border: 1px solid #1c2333;
+}
+.link-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 4px;
+}
+
+.link-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #e8ebf0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.link-pill:hover {
+  text-decoration: none;
+  background: #2b3a52;
+  border-color: #3b4b67;
+  transform: translateY(-1px);
+  transition: 0.15s ease;
+}
+
+.link-pill--secondary {
+  background: #111827;
+  border-color: #1f2937;
+  color: #cbd5f5;
+}
+
+.link-pill--secondary:hover {
+  background: #1b2535;
+}
+a.tech-link {
+  color: #8ab4ff;
+  font-weight: 500;
+}
+
+

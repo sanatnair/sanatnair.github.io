@@ -18,17 +18,38 @@
     </div>
 
     <div class="header">
-      <h1>Sanat Nair</h1>
-      <p class="subtitle">Mechanical &amp; Systems Design · Product Design · EPM/TPM</p>
+      <div class="header-top">
+        
+        <!-- Profile Image -->
+        <img src="assets\images\profile.JPG" alt="Sanat Nair" class="avatar">
+        
+        <!-- Name + Subtitle + Bio -->
+        <div class="header-info">
+          <h1>Sanat Nair</h1>
+          <p class="subtitle">Mechanical &amp; Systems Design · Product Design · TPM/EPM</p>
+
+        <ul class="bio-list bio-list--icon">
+          <li>Mechanical &amp; systems design engineer working across product development, robotics, and applied ML</li>
+          <li>Experienced in full-cycle mechanical design, embedded ML deployment, and technical program management</li>
+          <li>3× Chevron intern with experience in facilities, reliability, and design engineering</li>
+        </ul>
+
+        </div>
+
+      </div>
+
+      <!-- Buttons -->
       <div class="hero-links">
         <a class="btn" href="https://www.linkedin.com/in/sanat-nair" target="_blank" rel="noreferrer">LinkedIn</a>
         <a class="btn" href="https://github.com/sanatnair" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </div>
 
+
+
     <section id="projects" style="margin-top:32px;">
       <h2>Projects</h2>
-      <p class="subtitle">A selection of design, research, and impact work.</p>
+      <p class="subtitle">A selection of my design, research, and impact work.</p>
 
       <div class="grid">
 
@@ -47,7 +68,7 @@
 
           <p>
             Leading the design of an autonomous waste-collection device for the
-            <a href="https://efests.asme.org/competitions/student-design-competition-(sdc)" target="_blank" rel="noreferrer">
+            <a class="tech-link" href="https://efests.asme.org/competitions/student-design-competition-(sdc)" target="_blank" rel="noreferrer">
               ASME Student Design Competition
             </a>, focused on efficiency and sorting accuracy.
           </p>
@@ -59,7 +80,7 @@
 
         <!-- 2. RC Car card -->
         <article class="card">
-          <h3>RC Car Build</h3>
+          <h3>RC Car Build — Capstone Mechanical Design</h3>
           <p class="subtitle">Project Manager — Mechanical Design &amp; Additive Manufacturing</p>
           <div>
             <span class="tag">Product Design</span>
@@ -71,7 +92,7 @@
 
           <p>
             Designed and built an RC race car with a 259 mm wheelbase, rear-wheel-drive powertrain,
-            and optimized Ackermann steering as part of a semester-long capstone project.
+            and optimized Ackermann steering.
           </p>
 
           <button class="card-toggle" type="button" data-modal="modal-rc-car">
@@ -93,7 +114,7 @@
           <img src="assets/images/guad_thumb.jpg" alt="Hyperloop chassis" class="card-thumb"> 
 
           <p>
-            Designed the composite chassis and thermal subsystems for the Texas Guadaloop Hyperloop pod.
+            Designed and manufactured the composite chassis and thermal subsystems for the Texas Guadaloop Hyperloop pod.
           </p>
 
           <button class="card-toggle" type="button" data-modal="modal-guadaloop">
@@ -138,7 +159,7 @@
           <img src="assets/images/launder_thumb.png" alt="Launder app logo" class="card-thumb"> 
 
           <p>
-            Developed a sustainability-focused web app that recommends energy-efficient laundry times
+            Developed a sustainability-focused mobile app that recommends energy-efficient laundry times
             using real-time grid and utility data.
           </p>
 
@@ -149,7 +170,7 @@
 
         <!-- 6. PUC card -->
         <article class="card">
-          <h3>Projects with Underserved Communities (PUC) — Team India</h3>
+          <h3>Projects with Underserved Communities — Team India</h3>
           <p class="subtitle">Technical Manager — Humanitarian Engineering &amp; Program Coordination</p>
           <div>
             <span class="tag">Sustainable Design</span>
@@ -193,7 +214,7 @@
       <h4>What</h4>
       <p>
         Leading the development of an autonomous waste-collection device for the
-        <a href="https://efests.asme.org/competitions/student-design-competition-(sdc)" target="_blank" rel="noreferrer">
+        <a class="tech-link" href="https://efests.asme.org/competitions/student-design-competition-(sdc)" target="_blank" rel="noreferrer">
           ASME Student Design Competition
         </a>, focused on efficiency, sorting accuracy, and delivery mechanisms.
       </p>
@@ -210,6 +231,18 @@
         Completed the Concept Design Phase ahead of schedule; targeting 100% sorting accuracy and maximized throughput
         entering the Preliminary Design Phase for Spring 2026 competition.
       </p>
+      <h4>Links</h4>
+      <div class="link-badges">
+        <a class="link-pill link-pill--secondary"
+           href="https://efests.asme.org/competitions/student-design-competition-(sdc)"
+           target="_blank" rel="noreferrer">
+          ASME SDC Competition
+        </a>
+      </div>
+
+      <h4>Media</h4>
+      <img src="assets\images\asme_sketch.jpg"
+           alt="ASME waste-collection device concept sketch">
     </div>
   </div>
 
@@ -245,6 +278,14 @@
         Achieved 20–26 mph top speed with ~2 s 0–10 mph acceleration; completed 8 successful track laps with ~7 s best
         lap time. Demonstrated durability and stable handling throughout race tests.
       </p>
+      <h4>Media</h4>
+      <img src="assets\images\rc_cad.png"
+           alt="RC car assembled CAD">
+      <img src="assets\images\rc_sus.png"
+           alt="RC car suspension CAD">
+      <img src="assets\images\rc_drive.png"
+           alt="RC car drivetrain CAD">
+
     </div>
   </div>
 
@@ -281,6 +322,16 @@
         Delivered a lightweight, robust chassis meeting structural safety factors (&gt; 2); integrated propulsion,
         electronics, and levitation subsystems onto the completed frame.
       </p>
+      <h4>Media</h4>
+      <img src="assets\images\guad_FEA.jpg"
+           alt="Texas Guadaloop Hyperloop FEA">
+
+      <video src="assets\videos\guad_pcm.mp4"
+             controls
+             muted
+             playsinline>
+        Your browser does not support the video tag.
+      </video>
     </div>
   </div>
 
@@ -309,7 +360,18 @@
       <p>
         Published egocentric and allocentric datasets (12+ hrs, 10,200+ annotations) on the Texas Data Repository and
         arXiv. Fine-tuned depth- and gesture-recognition models using the UniK3D + YOLO framework and deployed them on
-        Jetson edge devices. Integrated perception into UR3 robot control via ROS2 for additive-manufacturing tasks.
+        <a class="tech-link" href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/" target="_blank" rel="noreferrer">
+          Jetson edge devices
+        </a>
+        via
+        <a class="tech-link" href="https://www.docker.com/" target="_blank" rel="noreferrer">
+          Docker
+        </a>.
+        Integrated perception capabilities into a UR3 robotic manipulator using
+        <a class="tech-link" href="https://docs.ros.org/en/foxy/index.html" target="_blank" rel="noreferrer">
+          ROS2
+        </a>
+        for additive-manufacturing tasks.
       </p>
 
       <h4>Results</h4>
@@ -317,13 +379,51 @@
         Advanced UT’s human-robot-interaction research pipeline with deployed edge-inference prototypes; contributed to
         an IEEE FG 2026 conference submission.
       </p>
+      <h4>Publications &amp; Datasets</h4>
+      <div class="link-badges">
+        <a class="link-pill"
+           href="https://doi.org/10.48550/arXiv.2407.14649"
+           target="_blank" rel="noreferrer">
+          arXiv Paper
+        </a>
+        <a class="link-pill"
+           href="https://utnuclearroboticspublic.github.io/egonrg-website/"
+           target="_blank" rel="noreferrer">
+          EgoNRG Dataset Site
+        </a>
+      </div>
 
-      <h4>Links</h4>
-      <p>
-        – <a href="https://doi.org/10.48550/arXiv.2407.14649" target="_blank" rel="noreferrer">arXiv paper</a><br>
-        – <a href="https://utnuclearroboticspublic.github.io/egonrg-website/" target="_blank" rel="noreferrer">EgoNRG project site</a><br>
-        – <a href="https://github.com/UTNuclearRobotics/UniK3D" target="_blank" rel="noreferrer">UniK3D GitHub repo</a>
-      </p>
+      <h4>Code &amp; Deployment</h4>
+      <div class="link-badges">
+        <a class="link-pill link-pill--secondary"
+           href="https://github.com/UTNuclearRobotics/UniK3D"
+           target="_blank" rel="noreferrer">
+          UniK3D + YOLO Repo
+        </a>
+        <a class="link-pill link-pill--secondary"
+           href="https://github.com/frank-Regal/HRI-Cacti"
+           target="_blank" rel="noreferrer">
+          Cacti HRI Repo
+        </a>
+      </div>
+
+      <h4>Media</h4>
+      <img src="assets\images\nrg_ouster.png"
+           alt="Boston Dynamics Spot with Ouster Mount">
+
+      <video src="assets\videos\NRG_yolo.mp4"
+             controls
+             muted
+             playsinline>
+        Your browser does not support the video tag.
+      </video>
+
+      <video src="assets\videos\NRG_unik3d.mp4"
+             controls
+             muted
+             playsinline>
+        Your browser does not support the video tag.
+      </video>
     </div>
   </div>
 
@@ -342,26 +442,40 @@
 
       <h4>What</h4>
       <p>
-        Developed a sustainability-focused web app that recommends energy-efficient laundry times based on real-time
+        Developed a sustainability-focused mobile app that recommends energy-efficient laundry times based on real-time
         grid and utility data.
       </p>
 
       <h4>How</h4>
       <p>
-        Built frontend components in React.js; integrated graphics and scheduling logic into user dashboards; collaborated
-        with technical and product members to iterate on UI/UX.
+        Built frontend components in
+        <a class="tech-link" href="https://react.dev/" target="_blank" rel="noreferrer">
+          React.js
+        </a>;
+        integrated graphics and scheduling logic into user dashboards; collaborated
+        with technical and product team members to iterate on UI/UX.
       </p>
 
       <h4>Results</h4>
       <p>
         Won <em>Best Tech Project</em> at Convergent Demo Day 2022 for usability, technical depth, and impact.
       </p>
-
       <h4>Links</h4>
-      <p>
-        – <a href="https://github.com/bengordon-dev/fa22-sustainability-water" target="_blank" rel="noreferrer">GitHub repo</a><br>
-        – <a href="https://www.canva.com/design/DAFRwFxXMA0/EPpnkytRgTof7uzfa7ZMCQ/view" target="_blank" rel="noreferrer">Slide deck</a>
-      </p>
+      <div class="link-badges">
+        <a class="link-pill"
+           href="https://github.com/bengordon-dev/fa22-sustainability-water"
+           target="_blank" rel="noreferrer">
+          GitHub Repo
+        </a>
+      </div>
+      <h4>Pitch Deck</h4>
+      <iframe
+        src="https://www.canva.com/design/DAFRwFxXMA0/EPpnkytRgTof7uzfa7ZMCQ/view?embed"
+        width="100%"
+        height="420"
+        style="border:0;border-radius:12px;margin:14px 0;"
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
 
@@ -396,52 +510,63 @@
         Deliver conceptual design package and project scope documents; scheduled for onsite validation and
         construction initiation in May 2026.
       </p>
-
       <h4>Links</h4>
-      <p>
-        – <a href="https://give.utexas.edu/puc-india-team-green" target="_blank" rel="noreferrer">HornRaiser campaign</a>
-      </p>
+      <div class="link-badges">
+        <a class="link-pill"
+           href="https://give.utexas.edu/puc-india-team-green"
+           target="_blank" rel="noreferrer">
+          HornRaiser Campaign
+        </a>
+      </div>
+
+      <h4>Media</h4>
+      <img src="assets\images\puc_building.png"
+           alt="PUC India sample work package">
+
+
     </div>
   </div>
 
-  <!-- ===== Modal JS wiring ===== -->
   <script>
-    // Open modal on button click
-    document.querySelectorAll('[data-modal]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        const id = btn.getAttribute('data-modal');
-        const modal = document.getElementById(id);
-        if (modal) {
-          modal.classList.add('open');
+    document.addEventListener('DOMContentLoaded', function () {
+      // Open modal on button click
+      document.querySelectorAll('[data-modal]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const id = btn.getAttribute('data-modal');
+          const modal = document.getElementById(id);
+          if (modal) {
+            modal.classList.add('open');
+          }
+        });
+      });
+
+      // Close modal on X or backdrop click
+      document.querySelectorAll('.modal').forEach(function (modal) {
+        const closeBtn = modal.querySelector('.modal-close');
+
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function () {
+            modal.classList.remove('open');
+          });
+        }
+
+        modal.addEventListener('click', function (e) {
+          if (e.target === modal) {
+            modal.classList.remove('open');
+          }
+        });
+      });
+
+      // Close all modals on Esc key
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.modal.open').forEach(function (m) {
+            m.classList.remove('open');
+          });
         }
       });
-    });
-
-    // Close modal on X or backdrop click
-    document.querySelectorAll('.modal').forEach(function (modal) {
-      const closeBtn = modal.querySelector('.modal-close');
-
-      if (closeBtn) {
-        closeBtn.addEventListener('click', function () {
-          modal.classList.remove('open');
-        });
-      }
-
-      modal.addEventListener('click', function (e) {
-        if (e.target === modal) {
-          modal.classList.remove('open');
-        }
-      });
-    });
-
-    // Close all modals on Esc key
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.modal.open').forEach(function (m) {
-          m.classList.remove('open');
-        });
-      }
     });
   </script>
+
 </body>
 </html>
