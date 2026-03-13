@@ -253,13 +253,18 @@
         style="border:0;border-radius:12px;margin:14px 0;"
         allowfullscreen>
       </iframe> -->
-      <div style="position:relative;width:100%;padding-top:56.25%;margin:14px 0;overflow:hidden;border-radius:12px;">
-      <iframe
-        src="https://docs.google.com/presentation/d/e/2PACX-1vQvL8qCO_fYXQO0uiYl7M_kercNYdBNbcVOCFUXfqpyqR2Lmu380byLNxHmYEipLcR-oKXdycIP8A2p/pubembed?start=false&loop=false"
-        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-        allowfullscreen>
-      </iframe>
-    </div>
+      <div class="embed-frame-wrap">
+        <iframe
+          class="embed-frame"
+          data-src="https://docs.google.com/presentation/d/e/2PACX-1vQvL8qCO_fYXQO0uiYl7M_kercNYdBNbcVOCFUXfqpyqR2Lmu380byLNxHmYEipLcR-oKXdycIP8A2p/pubembed?start=false&loop=false"
+          title="Autonomous Waste-Collection Device slide deck"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="embed-fallback">
+        If the deck does not render cleanly on mobile,
+        <a class="tech-link" href="https://docs.google.com/presentation/d/e/2PACX-1vQvL8qCO_fYXQO0uiYl7M_kercNYdBNbcVOCFUXfqpyqR2Lmu380byLNxHmYEipLcR-oKXdycIP8A2p/pub?start=false&loop=false" target="_blank" rel="noreferrer">open the deck in a new tab</a>.
+      </p>
     </div>
   </div>
 
@@ -563,6 +568,14 @@
           const modal = document.getElementById(id);
           if (modal) {
             modal.classList.add('open');
+            const deferredEmbeds = modal.querySelectorAll('iframe[data-src]');
+            requestAnimationFrame(function () {
+              deferredEmbeds.forEach(function (frame) {
+                if (!frame.getAttribute('src')) {
+                  frame.setAttribute('src', frame.getAttribute('data-src'));
+                }
+              });
+            });
           }
         });
       });
